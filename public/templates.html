@@ -1,0 +1,719 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a Template | Seller Website Builder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/templates.css">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard-layout">
+
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+
+            <div class="sidebar-brand">
+                <h2>Seller Builder</h2>
+                <p>Seller Workspace</p>
+            </div>
+
+            <nav class="sidebar-nav">
+                <p class="nav-heading">MAIN MENU</p>
+
+                <a href="dashboard.html" class="nav-link">
+                    <span>▦</span> Dashboard
+                </a>
+
+                <a href="products.html" class="nav-link">
+                    <span>□</span> My Products
+                </a>
+
+                <a href="templates.html" class="nav-link active">
+                    <span>◇</span> Website Builder
+                </a>
+
+                <a href="dashboard.html#preview" class="nav-link">
+                    <span>◉</span> Preview Website
+                </a>
+
+                <p class="nav-heading settings-heading">ACCOUNT</p>
+
+                <a href="dashboard.html#settings" class="nav-link">
+                    <span>⚙</span> Profile Settings
+                </a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <button id="logoutButton" class="logout-button">
+                    <span>↪</span> Log Out
+                </button>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+
+            <header class="dashboard-topbar">
+                <div>
+                    <p class="topbar-label">WEBSITE BUILDER</p>
+                    <h2>Choose Your Store Design</h2>
+                </div>
+
+                <div class="topbar-user">
+                    <div class="user-avatar" id="userAvatar">S</div>
+                    <div class="user-details">
+                        <p id="sellerName">Seller</p>
+                        <span>Seller Account</span>
+                    </div>
+                </div>
+            </header>
+
+            <section class="templates-content">
+
+                <div class="templates-heading">
+                    <div>
+                        <p class="welcome-label">TEMPLATE GALLERY</p>
+                        <h1>Find the right design for your business</h1>
+                        <p>
+                            Explore professionally designed store layouts.
+                            Choose your business category and customize your website.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Search and Filter -->
+                <div class="template-toolbar">
+                    <div class="template-search">
+                        <input
+                            type="search"
+                            id="templateSearch"
+                            placeholder="Search templates or categories..."
+                            aria-label="Search templates">
+                    </div>
+
+                    <p id="templateCount">20 templates available</p>
+                </div>
+
+                <!-- Category: General -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>General Shopping</h2>
+                            <p>Flexible designs for different kinds of products.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="General Store" data-category="general shopping">
+                            <div class="template-preview preview-general">
+                                <div class="preview-top"><b>EVERYDAY.</b><span>HOME&nbsp; SHOP&nbsp; ABOUT</span></div>
+                                <div class="preview-hero">
+                                    <small>EVERYTHING YOU NEED</small>
+                                    <h3>Shop Your<br>Everyday.</h3>
+                                    <div class="preview-shape shape-general"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>General Store</h3>
+                                <p>A versatile shopping layout for multi-category products.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="general">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="general">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Category: Fashion -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>Fashion & Accessories</h2>
+                            <p>Stylish storefronts for clothing, footwear and accessories.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="Fashion Store" data-category="fashion clothing">
+                            <div class="template-preview preview-fashion">
+                                <div class="preview-top"><b>ÉLÉGANCE</b><span>NEW IN&nbsp; COLLECTION</span></div>
+                                <div class="preview-hero">
+                                    <small>NEW COLLECTION</small>
+                                    <h3>Wear Your<br>Story.</h3>
+                                    <div class="preview-shape shape-fashion"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Fashion Store</h3>
+                                <p>An editorial-inspired design for clothing and fashion brands.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="fashion">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="fashion">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="template-card" data-name="Shoes & Footwear" data-category="shoes footwear">
+                            <div class="template-preview preview-shoes">
+                                <div class="preview-top"><b>STEP UP</b><span>MEN&nbsp; WOMEN&nbsp; NEW</span></div>
+                                <div class="preview-hero">
+                                    <small>MADE TO MOVE</small>
+                                    <h3>Find Your<br>Next Step.</h3>
+                                    <div class="preview-shape shape-shoes"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Shoes & Footwear</h3>
+                                <p>A product-focused layout for shoes, sneakers and footwear.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="shoes">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="shoes">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="template-card" data-name="Bags & Accessories" data-category="bags accessories">
+                            <div class="template-preview preview-bags">
+                                <div class="preview-top"><b>FORM & FUNCTION</b><span>COLLECTIONS&nbsp; ABOUT</span></div>
+                                <div class="preview-hero">
+                                    <small>THE ACCESSORY EDIT</small>
+                                    <h3>Carry It<br>Your Way.</h3>
+                                    <div class="preview-shape shape-bags"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Bags & Accessories</h3>
+                                <p>A refined showcase for bags, wallets and everyday accessories.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="bags">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="bags">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="template-card" data-name="Jewelry & Watches" data-category="jewelry watches">
+                            <div class="template-preview preview-jewelry">
+                                <div class="preview-top"><b>ATELIER</b><span>JEWELRY&nbsp; TIMEPIECES</span></div>
+                                <div class="preview-hero">
+                                    <small>TIMELESS DETAILS</small>
+                                    <h3>Made to<br>Treasure.</h3>
+                                    <div class="preview-shape shape-jewelry"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Jewelry & Watches</h3>
+                                <p>An elegant luxury-style storefront for jewelry and watches.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="jewelry">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="jewelry">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Category: Technology -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>Technology & Electronics</h2>
+                            <p>Modern layouts for gadgets and electronic products.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="Electronics Store" data-category="electronics technology gadgets">
+                            <div class="template-preview preview-electronics">
+                                <div class="preview-top"><b>TECHSPACE</b><span>DEVICES&nbsp; DEALS</span></div>
+                                <div class="preview-hero">
+                                    <small>UPGRADE YOUR WORLD</small>
+                                    <h3>Technology<br>Reimagined.</h3>
+                                    <div class="preview-shape shape-electronics"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Electronics Store</h3>
+                                <p>A sleek tech-inspired design for electronic products and gadgets.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="electronics">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="electronics">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="template-card" data-name="Mobile & Accessories" data-category="mobile phone accessories">
+                            <div class="template-preview preview-mobile">
+                                <div class="preview-top"><b>MOBILIO</b><span>PHONES&nbsp; ACCESSORIES</span></div>
+                                <div class="preview-hero">
+                                    <small>SMARTER EVERY DAY</small>
+                                    <h3>Stay<br>Connected.</h3>
+                                    <div class="preview-shape shape-mobile"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Mobile & Accessories</h3>
+                                <p>A focused catalog for smartphones and mobile accessories.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="mobile">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="mobile">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Category: Beauty -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>Beauty & Personal Care</h2>
+                            <p>Clean, elegant designs for beauty and skincare businesses.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="Beauty & Cosmetics" data-category="beauty cosmetics makeup">
+                            <div class="template-preview preview-beauty">
+                                <div class="preview-top"><b>BLUSH & BLOOM</b><span>SHOP&nbsp; BEAUTY</span></div>
+                                <div class="preview-hero">
+                                    <small>YOUR BEAUTY RITUAL</small>
+                                    <h3>Feel Like<br>You.</h3>
+                                    <div class="preview-shape shape-beauty"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Beauty & Cosmetics</h3>
+                                <p>A soft and elegant storefront for cosmetics and makeup.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="beauty">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="beauty">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="template-card" data-name="Skincare Store" data-category="skincare skin care">
+                            <div class="template-preview preview-skincare">
+                                <div class="preview-top"><b>PURE SKIN</b><span>ROUTINE&nbsp; INGREDIENTS</span></div>
+                                <div class="preview-hero">
+                                    <small>CARE THAT SHOWS</small>
+                                    <h3>Keep Your<br>Glow.</h3>
+                                    <div class="preview-shape shape-skincare"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Skincare Store</h3>
+                                <p>A fresh minimal design for skincare and personal care products.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="skincare">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="skincare">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Category: Home -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>Home & Lifestyle</h2>
+                            <p>Warm and visual storefronts for home and living products.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="Home & Furniture" data-category="home furniture">
+                            <div class="template-preview preview-home">
+                                <div class="preview-top"><b>HABITAT</b><span>FURNITURE&nbsp; LIVING</span></div>
+                                <div class="preview-hero">
+                                    <small>MAKE ROOM FOR LIFE</small>
+                                    <h3>Live<br>Beautifully.</h3>
+                                    <div class="preview-shape shape-home"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Home & Furniture</h3>
+                                <p>A spacious interior-inspired layout for furniture stores.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="home">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="home">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="template-card" data-name="Home Decor" data-category="home decor interior">
+                            <div class="template-preview preview-decor">
+                                <div class="preview-top"><b>THE LITTLE HOME</b><span>DECOR&nbsp; OBJECTS</span></div>
+                                <div class="preview-hero">
+                                    <small>DETAILS MAKE A HOME</small>
+                                    <h3>Spaces with<br>Meaning.</h3>
+                                    <div class="preview-shape shape-decor"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Home Decor</h3>
+                                <p>A lifestyle-led design for decor, lighting and home accents.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="decor">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="decor">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Category: Food -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>Food & Grocery</h2>
+                            <p>Appetizing and easy-to-browse shopping layouts.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="Grocery & Supermarket" data-category="grocery supermarket food">
+                            <div class="template-preview preview-grocery">
+                                <div class="preview-top"><b>FRESH MART</b><span>FRUITS&nbsp; DAILY NEEDS</span></div>
+                                <div class="preview-hero">
+                                    <small>FRESH PICKS DAILY</small>
+                                    <h3>Good Food.<br>Good Mood.</h3>
+                                    <div class="preview-shape shape-grocery"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Grocery & Supermarket</h3>
+                                <p>A practical product-grid layout for groceries and essentials.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="grocery">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="grocery">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                        <article class="template-card" data-name="Food & Bakery" data-category="food bakery restaurant">
+                            <div class="template-preview preview-food">
+                                <div class="preview-top"><b>THE DAILY OVEN</b><span>MENU&nbsp; ORDER</span></div>
+                                <div class="preview-hero">
+                                    <small>FRESH FROM OUR KITCHEN</small>
+                                    <h3>Baked with<br>Love.</h3>
+                                    <div class="preview-shape shape-food"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Food & Bakery</h3>
+                                <p>A warm visual storefront for bakeries and food businesses.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="food">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="food">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Category: Sports -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>Sports & Fitness</h2>
+                            <p>Energetic designs for active lifestyles and training.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="Sports & Fitness" data-category="sports fitness gym">
+                            <div class="template-preview preview-sports">
+                                <div class="preview-top"><b>PEAK PERFORMANCE</b><span>TRAIN&nbsp; MOVE</span></div>
+                                <div class="preview-hero">
+                                    <small>BUILT FOR YOUR BEST</small>
+                                    <h3>Push Your<br>Limits.</h3>
+                                    <div class="preview-shape shape-sports"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Sports & Fitness</h3>
+                                <p>A bold athletic layout for sportswear and fitness equipment.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="sports">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="sports">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Category: Books -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>Books & Stationery</h2>
+                            <p>Organized layouts for reading, learning and creative supplies.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="Books & Stationery" data-category="books stationery education">
+                            <div class="template-preview preview-books">
+                                <div class="preview-top"><b>PAPER & PAGE</b><span>BOOKS&nbsp; SUPPLIES</span></div>
+                                <div class="preview-hero">
+                                    <small>IDEAS START HERE</small>
+                                    <h3>Find Your<br>Next Chapter.</h3>
+                                    <div class="preview-shape shape-books"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Books & Stationery</h3>
+                                <p>A calm editorial design for books and stationery products.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="books">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="books">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Category: Kids -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>Kids & Family</h2>
+                            <p>Friendly and colorful designs for children and families.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="Toys & Baby Products" data-category="toys baby kids children">
+                            <div class="template-preview preview-kids">
+                                <div class="preview-top"><b>LITTLE WONDER</b><span>TOYS&nbsp; BABY&nbsp; PLAY</span></div>
+                                <div class="preview-hero">
+                                    <small>BIG FUN FOR LITTLE ONES</small>
+                                    <h3>Little Things.<br>Big Smiles.</h3>
+                                    <div class="preview-shape shape-kids"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Toys & Baby Products</h3>
+                                <p>A playful and welcoming store design for kids and baby products.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="kids">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="kids">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Category: Pets -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>Pets & Animals</h2>
+                            <p>Friendly storefronts for pet products and supplies.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="Pet Supplies" data-category="pets animals pet supplies">
+                            <div class="template-preview preview-pets">
+                                <div class="preview-top"><b>PAW & CO.</b><span>SHOP&nbsp; CARE&nbsp; PLAY</span></div>
+                                <div class="preview-hero">
+                                    <small>HAPPY PETS, HAPPY HOMES</small>
+                                    <h3>Made for<br>Every Paw.</h3>
+                                    <div class="preview-shape shape-pets"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Pet Supplies</h3>
+                                <p>A cheerful product catalog for pet food, toys and accessories.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="pets">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="pets">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Category: Automotive -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>Automotive</h2>
+                            <p>Structured product catalogs for vehicle-related products.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="Automotive & Accessories" data-category="automotive car vehicle accessories">
+                            <div class="template-preview preview-auto">
+                                <div class="preview-top"><b>DRIVEWORKS</b><span>PARTS&nbsp; ACCESSORIES</span></div>
+                                <div class="preview-hero">
+                                    <small>MADE FOR THE ROAD</small>
+                                    <h3>Drive with<br>Confidence.</h3>
+                                    <div class="preview-shape shape-auto"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Automotive & Accessories</h3>
+                                <p>A strong catalog layout for car parts and vehicle accessories.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="automotive">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="automotive">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Category: Gifts -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>Gifts & Handmade</h2>
+                            <p>Creative designs for unique gifts and handcrafted products.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="Gifts & Handmade" data-category="gifts handmade crafts">
+                            <div class="template-preview preview-gifts">
+                                <div class="preview-top"><b>MADE WITH CARE</b><span>GIFTS&nbsp; HANDMADE</span></div>
+                                <div class="preview-hero">
+                                    <small>THOUGHTFUL BY NATURE</small>
+                                    <h3>Give Something<br>Meaningful.</h3>
+                                    <div class="preview-shape shape-gifts"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Gifts & Handmade</h3>
+                                <p>A boutique-style layout for handmade items and special gifts.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="gifts">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="gifts">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+                <!-- Category: Digital -->
+                <div class="template-category-section">
+                    <div class="template-category-heading">
+                        <div>
+                            <h2>Digital Products</h2>
+                            <p>Modern layouts for downloadable and digital products.</p>
+                        </div>
+                    </div>
+
+                    <div class="templates-grid">
+
+                        <article class="template-card" data-name="Digital Products" data-category="digital downloads online">
+                            <div class="template-preview preview-digital">
+                                <div class="preview-top"><b>PIXEL MARKET</b><span>EXPLORE&nbsp; DOWNLOADS</span></div>
+                                <div class="preview-hero">
+                                    <small>YOUR NEXT BIG IDEA</small>
+                                    <h3>Download.<br>Create. Grow.</h3>
+                                    <div class="preview-shape shape-digital"></div>
+                                </div>
+                                <div class="preview-products"><i></i><i></i><i></i></div>
+                            </div>
+                            <div class="template-card-info">
+                                <h3>Digital Products</h3>
+                                <p>A modern storefront for digital downloads and online resources.</p>
+                                <div class="template-actions">
+                                    <button class="template-preview-button" data-action="preview" data-template="digital">Preview</button>
+                                    <button class="template-use-button" data-action="use" data-template="digital">Use Template</button>
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Preview Modal -->
+    <div class="template-modal" id="templateModal">
+        <div class="template-modal-content">
+            <button class="modal-close" id="closeTemplateModal" aria-label="Close preview">&times;</button>
+
+            <div id="templateModalPreview"></div>
+
+            <div class="modal-template-info">
+                <h2 id="modalTemplateName">Template Preview</h2>
+                <p>
+                    Explore this design before selecting it.
+                    You can customize your store after choosing a template.
+                </p>
+
+                <button
+                    id="modalUseTemplate"
+                    class="template-use-button"
+                    data-template="">
+                    Use This Template
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/templates.js"></script>
+
+</body>
+</html>

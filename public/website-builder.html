@@ -1,0 +1,362 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Website Builder | Seller Website Builder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/website-builder.css">
+</head>
+
+<body class="dashboard-body builder-editor-body">
+
+    <div class="builder-editor-layout">
+
+        <!-- Editor Top Bar -->
+        <header class="editor-topbar">
+
+            <div class="editor-topbar-left">
+
+                <!-- Compact Navigation Menu -->
+                <details class="editor-menu">
+
+                    <summary class="editor-menu-button" aria-label="Open navigation menu">
+                        <span class="menu-icon">☰</span>
+                        <span>Menu</span>
+                    </summary>
+
+                    <div class="editor-menu-dropdown">
+
+                        <div class="editor-menu-brand">
+                            <strong>Seller Builder</strong>
+                            <small>Seller Workspace</small>
+                        </div>
+
+                        <nav class="editor-menu-nav">
+
+                            <a href="dashboard.html" class="editor-menu-link">
+                                <span>▦</span>
+                                Dashboard
+                            </a>
+
+                            <a href="products.html" class="editor-menu-link">
+                                <span>□</span>
+                                My Products
+                            </a>
+
+                            <a href="website-builder.html" class="editor-menu-link active">
+                                <span>◇</span>
+                                Website Builder
+                            </a>
+
+                            <a href="dashboard.html#preview" class="editor-menu-link">
+                                <span>◉</span>
+                                Preview Website
+                            </a>
+
+                            <a href="dashboard.html#settings" class="editor-menu-link">
+                                <span>⚙</span>
+                                Profile Settings
+                            </a>
+
+                        </nav>
+
+                        <div class="editor-menu-footer">
+                            <button type="button" id="logoutButton" class="editor-logout-button">
+                                <span>↪</span>
+                                Log Out
+                            </button>
+                        </div>
+
+                    </div>
+
+                </details>
+
+                <div class="editor-brand">
+                    <div class="editor-brand-mark">S</div>
+
+                    <div>
+                        <strong>Seller Builder</strong>
+                        <small>Website Editor</small>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="editor-topbar-right">
+
+                <div class="topbar-user">
+                    <div class="user-avatar" id="userAvatar">S</div>
+
+                    <div class="user-details">
+                        <p id="sellerName">Seller</p>
+                        <span>Seller Account</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </header>
+
+
+        <!-- Main Editor Content -->
+        <main class="builder-main-content">
+
+            <section class="builder-content">
+
+                <!-- Builder Heading -->
+                <div class="builder-page-heading">
+
+                    <div>
+                        <span class="editor-eyebrow">STORE DESIGN</span>
+
+                        <h1>Build Your Website</h1>
+
+                        <p>
+                            Customize your online store and create
+                            a website that represents your business.
+                        </p>
+                    </div>
+
+                    <div class="builder-top-actions">
+
+                        <button type="button"
+                            id="saveWebsiteButton"
+                            class="builder-save-button">
+                            Save Changes
+                        </button>
+
+                        <button type="button"
+                            id="previewWebsiteButton"
+                            class="builder-preview-button">
+                            Preview Website
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Builder Toolbar -->
+                <div class="builder-toolbar">
+
+                    <div class="builder-toolbar-left">
+                        <span class="builder-status-dot"></span>
+                        <span>Website Editor</span>
+                    </div>
+
+                    <div class="device-controls">
+
+                        <button type="button"
+                            class="device-button active"
+                            data-device="desktop">
+                            Desktop
+                        </button>
+
+                        <button type="button"
+                            class="device-button"
+                            data-device="tablet">
+                            Tablet
+                        </button>
+
+                        <button type="button"
+                            class="device-button"
+                            data-device="mobile">
+                            Mobile
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Main Builder Workspace -->
+                <div class="builder-workspace">
+
+                    <!-- Left Panel -->
+                    <aside class="builder-left-panel">
+
+                        <div class="builder-panel-heading">
+                            <h3>Elements</h3>
+                            <p>Add content to your website.</p>
+                        </div>
+
+                        <div class="builder-elements">
+
+                            <button type="button"
+                                class="builder-element"
+                                data-element="text">
+
+                                <span>T</span>
+
+                                <div>
+                                    <strong>Text</strong>
+                                    <small>Add a text section</small>
+                                </div>
+
+                            </button>
+
+                            <button type="button"
+                                class="builder-element"
+                                data-element="image">
+
+                                <span>▧</span>
+
+                                <div>
+                                    <strong>Image</strong>
+                                    <small>Add an image</small>
+                                </div>
+
+                            </button>
+
+                            <button type="button"
+                                class="builder-element"
+                                data-element="product">
+
+                                <span>□</span>
+
+                                <div>
+                                    <strong>Products</strong>
+                                    <small>Display your products</small>
+                                </div>
+
+                            </button>
+
+                            <button type="button"
+                                class="builder-element"
+                                data-element="button">
+
+                                <span>▭</span>
+
+                                <div>
+                                    <strong>Button</strong>
+                                    <small>Add an action button</small>
+                                </div>
+
+                            </button>
+
+                        </div>
+
+                    </aside>
+
+
+                    <!-- Center Canvas -->
+                    <section class="builder-canvas-area">
+
+                        <div class="canvas-heading">
+                            <span>Website Canvas</span>
+                            <span id="canvasDeviceLabel">Desktop View</span>
+                        </div>
+
+                        <div class="website-canvas" id="websiteCanvas">
+
+                            <div class="canvas-empty-state" id="canvasEmptyState">
+
+                                <div class="canvas-empty-icon">◇</div>
+
+                                <h2>Your Website Starts Here</h2>
+
+                                <p>
+                                    Add elements to start building
+                                    and customizing your website.
+                                </p>
+
+                                <button type="button" id="startBuildingButton">
+                                    Start Building
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </section>
+
+
+                    <!-- Right Panel -->
+                    <aside class="builder-right-panel">
+
+                        <div class="builder-panel-heading">
+                            <h3>Customization</h3>
+                            <p>Manage your website appearance.</p>
+                        </div>
+
+                        <div class="customization-section">
+
+                            <label for="websiteTitle">
+                                Website Name
+                            </label>
+
+                            <input type="text"
+                                id="websiteTitle"
+                                placeholder="My Online Store">
+
+                        </div>
+
+                        <div class="customization-section">
+
+                            <label for="primaryColor">
+                                Primary Color
+                            </label>
+
+                            <input type="color"
+                                id="primaryColor"
+                                value="#2563eb">
+
+                        </div>
+
+                        <div class="customization-section">
+
+                            <label for="secondaryColor">
+                                Secondary Color
+                            </label>
+
+                            <input type="color"
+                                id="secondaryColor"
+                                value="#111827">
+
+                        </div>
+
+                        <div class="customization-section">
+
+                            <label for="websiteFont">
+                                Font Style
+                            </label>
+
+                            <select id="websiteFont">
+                                <option value="Arial">Arial</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Verdana">Verdana</option>
+                                <option value="Tahoma">Tahoma</option>
+                            </select>
+
+                        </div>
+
+                        <div class="customization-empty">
+                            Select an element on the canvas to
+                            customize its properties.
+                        </div>
+
+                    </aside>
+
+                </div>
+
+
+                <!-- Builder Message -->
+                <div id="builderMessage" class="builder-message"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="js/website-builder.js"></script>
+
+</body>
+</html>

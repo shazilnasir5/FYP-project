@@ -1,0 +1,299 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Product Management | Seller Website Builder</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link rel="stylesheet" href="css/products.css">
+</head>
+
+<body class="dashboard-body">
+
+    <div class="dashboard-layout">
+
+        <!-- Sidebar -->
+        <aside class="dashboard-sidebar">
+
+            <div class="sidebar-brand">
+                <h2>Seller Builder</h2>
+                <p>Seller Workspace</p>
+            </div>
+
+            <nav class="sidebar-nav">
+
+                <p class="nav-heading">MAIN MENU</p>
+
+                <a href="dashboard.html" class="nav-link">
+                    <span>▦</span>
+                    Dashboard
+                </a>
+
+                <a href="products.html" class="nav-link active">
+                    <span>□</span>
+                    My Products
+                </a>
+
+                <a href="dashboard.html#website-builder" class="nav-link">
+                    <span>◇</span>
+                    Website Builder
+                </a>
+
+                <a href="dashboard.html#preview" class="nav-link">
+                    <span>◉</span>
+                    Preview Website
+                </a>
+
+                <p class="nav-heading settings-heading">ACCOUNT</p>
+
+                <a href="dashboard.html#settings" class="nav-link">
+                    <span>⚙</span>
+                    Profile Settings
+                </a>
+
+            </nav>
+
+            <div class="sidebar-bottom">
+                <button id="logoutButton" class="logout-button">
+                    <span>↪</span>
+                    Log Out
+                </button>
+            </div>
+
+        </aside>
+
+        <!-- Main Content -->
+        <main class="dashboard-main">
+
+            <header class="dashboard-topbar">
+
+                <div>
+                    <p class="topbar-label">SELLER WORKSPACE</p>
+                    <h2>Product Management</h2>
+                </div>
+
+                <div class="topbar-user">
+                    <div class="user-avatar" id="userAvatar">S</div>
+
+                    <div class="user-details">
+                        <p id="sellerName">Seller</p>
+                        <span>Seller Account</span>
+                    </div>
+                </div>
+
+            </header>
+
+            <section class="products-content">
+
+                <!-- Page Heading -->
+                <div class="products-page-heading">
+
+                    <div>
+                        <h1>My Products</h1>
+                        <p>
+                            Add, organize and manage the products
+                            available in your store.
+                        </p>
+                    </div>
+
+                    <button id="addProductButton" class="add-product-button">
+                        + Add New Product
+                    </button>
+
+                </div>
+
+                <!-- Product Statistics -->
+                <div class="product-summary">
+
+                    <div class="summary-card">
+                        <p>Total Products</p>
+                        <h2 id="productCount">0</h2>
+                    </div>
+
+                    <div class="summary-card">
+                        <p>In Stock</p>
+                        <h2 id="inStockCount">0</h2>
+                    </div>
+
+                    <div class="summary-card">
+                        <p>Out of Stock</p>
+                        <h2 id="outOfStockCount">0</h2>
+                    </div>
+
+                </div>
+
+                <!-- Product List -->
+                <div class="products-list-container">
+
+                    <div class="products-list-heading">
+                        <div>
+                            <h2>All Products</h2>
+                            <p>Manage your store inventory.</p>
+                        </div>
+                    </div>
+
+                    <div id="productsMessage" class="products-message"></div>
+
+                    <div class="products-table-wrapper">
+
+                        <table class="products-table">
+
+                            <thead>
+                                <tr>
+                                    <th>Product</th>
+                                    <th>Category</th>
+                                    <th>Price</th>
+                                    <th>Stock</th>
+                                    <th>Actions</th>
+                                </tr>
+                            </thead>
+
+                            <tbody id="productsTableBody">
+                                <tr>
+                                    <td colspan="5" class="empty-products">
+                                        Loading products...
+                                    </td>
+                                </tr>
+                            </tbody>
+
+                        </table>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <!-- Add / Edit Product Modal -->
+    <div id="productModal" class="product-modal">
+
+        <div class="product-modal-content">
+
+            <div class="modal-heading">
+
+                <div>
+                    <h2 id="modalTitle">Add New Product</h2>
+                    <p>Enter your product information below.</p>
+                </div>
+
+                <button type="button" id="closeModalButton"
+                    class="close-modal-button">
+                    &times;
+                </button>
+
+            </div>
+
+            <form id="productForm">
+
+                <input type="hidden" id="productId">
+
+                <div class="product-form-group">
+                    <label for="productName">Product Name *</label>
+                    <input
+                        type="text"
+                        id="productName"
+                        placeholder="Enter product name"
+                        maxlength="255"
+                        required
+                    >
+                </div>
+
+                <div class="product-form-group">
+                    <label for="productDescription">Description</label>
+                    <textarea
+                        id="productDescription"
+                        placeholder="Describe your product"
+                        rows="4"
+                    ></textarea>
+                </div>
+
+                <div class="product-form-row">
+
+                    <div class="product-form-group">
+                        <label for="productPrice">Price *</label>
+                        <input
+                            type="number"
+                            id="productPrice"
+                            placeholder="0.00"
+                            min="0"
+                            step="0.01"
+                            required
+                        >
+                    </div>
+
+                    <div class="product-form-group">
+                        <label for="productStock">Stock Quantity</label>
+                        <input
+                            type="number"
+                            id="productStock"
+                            placeholder="0"
+                            min="0"
+                            step="1"
+                            value="0"
+                        >
+                    </div>
+
+                </div>
+
+                <div class="product-form-group">
+                    <label for="productCategory">Category</label>
+                    <input
+                        type="text"
+                        id="productCategory"
+                        placeholder="e.g. Clothing, Electronics"
+                        maxlength="100"
+                    >
+                </div>
+
+                <div class="product-form-group">
+                    <label for="productImage">Product Image URL</label>
+                    <input
+                        type="url"
+                        id="productImage"
+                        placeholder="https://example.com/image.jpg"
+                        maxlength="500"
+                    >
+                    <small>Enter a publicly accessible image URL.</small>
+                </div>
+
+                <div id="productFormMessage" class="product-form-message"></div>
+
+                <div class="modal-actions">
+
+                    <button
+                        type="button"
+                        id="cancelProductButton"
+                        class="cancel-product-button"
+                    >
+                        Cancel
+                    </button>
+
+                    <button
+                        type="submit"
+                        id="saveProductButton"
+                        class="save-product-button"
+                    >
+                        Save Product
+                    </button>
+
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="js/products.js"></script>
+
+</body>
+</html>
